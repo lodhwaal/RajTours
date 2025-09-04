@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Jodhpur – The Blue City | Rajasthan Tourism</title>
+  <meta name="description" content="Jodhpur, the Blue City of Rajasthan. Explore Mehrangarh Fort, Umaid Bhawan, Jaswant Thada, Clock Tower, and history from Indus Valley to modern times.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="Jodhpur – The Blue City | Rajasthan Tourism">
+  <meta property="og:description" content="Plan your Jodhpur trip: forts, palaces, markets, and history from Indus Valley to modern Rajasthan.">
+  <meta property="og:image" content="https://www.dropbox.com/scl/fi/2kqgmwtn0kjmfx5ta7hh6/JODHPUR.jpg?rlkey=texesuw3z33xwyuut52wscx7t&raw=1">
+  <style>
+    body {font-family: Arial, sans-serif; margin:0; padding:0; background:#fff; color:#222; line-height:1.6;}
+    header {background:url('https://www.dropbox.com/scl/fi/2kqgmwtn0kjmfx5ta7hh6/JODHPUR.jpg?rlkey=texesuw3z33xwyuut52wscx7t&raw=1') center/cover no-repeat; height:260px; display:flex; align-items:center; justify-content:center; color:#fff; text-shadow:0 2px 6px rgba(0,0,0,0.7);}    
+    header h1 {font-size:34px; background:rgba(0,0,0,0.5); padding:10px 20px; border-radius:6px;}
+    nav {background:#0b63a3; padding:10px; text-align:center;}
+    nav a {color:#fff; margin:0 10px; text-decoration:none; font-weight:bold;}
+    nav a:hover {text-decoration:underline;}
+    nav .active {text-decoration:underline; color:#ffd700;}
+    .container {max-width:900px; margin:auto; padding:20px;}
+    h2 {color:#0b63a3; margin-top:30px;}
+    .facts {display:flex; gap:20px; flex-wrap:wrap; background:#f9f9f9; border-left:4px solid #0b63a3; padding:12px; border-radius:6px;}
+    .facts div {flex:1 1 200px;}
+    .attractions {display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:18px;}
+    .attraction {border:1px solid #ddd; border-radius:6px; overflow:hidden; background:#fafafa; box-shadow:0 2px 4px rgba(0,0,0,0.1); cursor:pointer; transition:transform 0.2s, box-shadow 0.2s;}
+    .attraction:hover {transform:scale(1.02); box-shadow:0 4px 8px rgba(0,0,0,0.15);}
+    .attraction img {width:100%; height:160px; object-fit:cover;}
+    .attraction div {padding:10px;}
+    .details {display:none; margin-top:8px; font-size:14px; color:#444;}
+    .toggle-icon {float:right; font-size:16px; color:#0b63a3;}
+    .gallery {display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:10px; margin-top:15px;}
+    .gallery img {width:100%; border-radius:6px;}
+    footer {text-align:center; padding:15px; margin-top:30px; font-size:14px; background:#f0f0f0;}
+    a {color:#0b63a3; text-decoration:none;}
+    a:hover {text-decoration:underline;}
+    .btn-back {display:inline-block; margin-top:20px; padding:8px 14px; background:#0b63a3; color:#fff; border-radius:4px;}
+    #moreInfo {max-height:0; overflow:hidden; transition:max-height 0.4s ease;}
+    #infoBtn {margin-top:10px; padding:6px 12px; background:#0b63a3; color:#fff; border:none; border-radius:4px; cursor:pointer;}
+    .plan-btn {display:block; margin:20px auto; text-align:center; padding:10px 20px; background:#28a745; color:#fff; border-radius:6px; width:max-content; font-size:16px;}
+    iframe {width:100%; height:280px; border:0; margin-top:15px; border-radius:6px;}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Jodhpur – The Blue City</h1>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="jaipur.html">Jaipur</a>
+    <a href="jodhpur.html" class="active">Jodhpur</a>
+    <a href="udaipur.html">Udaipur</a>
+    <a href="jaisalmer.html">Jaisalmer</a>
+    <a href="pushkar.html">Pushkar</a>
+    <a href="ajmer.html">Ajmer</a>
+    <a href="bikaner.html">Bikaner</a>
+    <a href="mount-abu.html">Mount Abu</a>
+    <a href="chittorgarh.html">Chittorgarh</a>
+  </nav>
+
+  <div class="container">
+    <h2>About Jodhpur</h2>
+    <p>
+      Jodhpur, gateway to the Thar, is called the Blue City for the vivid indigo-painted houses around Mehrangarh Fort. It is the historic capital of Marwar and blends royal palaces, sandstone forts and bustling bazaars.
+    </p>
+
+    <!-- Collapsible History Section -->
+    <div id="moreInfo">
+      <p>
+        The Jodhpur region has long-settled landscapes with archaeological traces linking it to ancient north-western Indian cultural zones. Local clans, trade routes across the Thar and control of water sources shaped early settlement. The Rathore dynasty established Jodhpur in <b>1459</b> under Rao Jodha; the city later expanded with major contributions from rulers like Jaswant Singh and Maharaja Umaid Singh. Under British-era princely administration, Jodhpur retained cultural autonomy and developed modern institutions. After independence it became part of Rajasthan and today is an important cultural, tourist and commercial hub.
+      </p>
+      <ul>
+        <li><b>c. 2500–1700 BCE:</b> Harappan cultural horizon present in north-western plains with trade links into semi-arid zones.</li>
+        <li><b>1st millennium BCE:</b> Early tribal-chiefdoms & trade routes linking the Thar and Aravallis.</li>
+        <li><b>7th–14th c.:</b> Rajput polities and local chieftains consolidate control of the region.</li>
+        <li><b>1459 CE:</b> Rao Jodha (Rathore) founds Jodhpur and builds the Mehrangarh citadel on a rocky ridge.</li>
+        <li><b>17th–19th c.:</b> Marwar rises as a major Rajput state; forts, palaces and temples expanded; alliances with Mughals and later British influence.</li>
+        <li><b>20th c.:</b> Umaid Bhawan Palace (early 1900s) – a landmark modern-era palace built as relief work during famine; modernization of city infrastructure.</li>
+        <li><b>1947–present:</b> Integration into India; Jodhpur grows as cultural tourism centre and regional trade hub.</li>
+      </ul>
+    </div>
+    <button onclick="toggleInfo()" id="infoBtn">From Indus to Blue City ⬇</button>
+
+    <h2>Top Attractions</h2>
+    <div class="attractions">
+      <div class="attraction" onclick="toggleAttraction(this)">
+        <img src="https://www.dropbox.com/scl/fi/2kqgmwtn0kjmfx5ta7hh6/JODHPUR.jpg?rlkey=texesuw3z33xwyuut52wscx7t&raw=1" alt="Mehrangarh Fort">
+        <div><b>Mehrangarh Fort</b> – Massive hilltop fort with museums & panoramic views <span class="toggle-icon">➕</span>
+          <div class="details">
+            Founded by Rao Jodha in the 15th century, Mehrangarh is one of India’s largest forts. Its thick walls, palaces, courtyards and a rich museum display royal arms, textiles and paintings. The fort houses several ornate palaces like Moti Mahal and Phool Mahal and provides sweeping views over the blue-painted old city below.
+          </div>
+        </div>
+      </div>
+
+      <div class="attraction" onclick="toggleAttraction(this)">
+        <img src="https://www.dropbox.com/scl/fi/4n6ztq6qkhmj9pn9gvyy9/Jodhpur2.jpeg?rlkey=g30mww2208h7eawv2tprx2e41&raw=1" alt="Umaid Bhawan Palace">
+        <div><b>Umaid Bhawan Palace</b> – Grand palace and museum; part still a luxury hotel <span class="toggle-icon">➕</span>
+          <div class="details">
+            Built in the early 20th century by Maharaja Umaid Singh, Umaid Bhawan blends Indo-colonial and classical styles. A portion serves as a museum showcasing royal lifestyles, while part of the palace operates as a heritage hotel. The palace and its gardens are an architectural highlight of modern Jodhpur.
+          </div>
+        </div>
+      </div>
+
+      <div class="attraction" onclick="toggleAttraction(this)">
+        <img src="https://www.dropbox.com/scl/fi/bz69l7j8rabgtbgp7wmtv/Jodhpur3.jpeg?rlkey=0hihujbxoy86g5z5tu8igkfsc&raw=1" alt="Jaswant Thada">
+        <div><b>Jaswant Thada</b> – Marble cenotaph and peaceful gardens <span class="toggle-icon">➕</span>
+          <div class="details">
+            Erected in memory of Maharaja Jaswant Singh II, Jaswant Thada is a white marble memorial noted for its delicate latticework, reflective pools and quiet terraces—often called the Taj Mahal of Marwar for its serene setting.
+          </div>
+        </div>
+      </div>
+
+      <div class="attraction" onclick="toggleAttraction(this)">
+        <img src="https://www.dropbox.com/scl/fi/2kqgmwtn0kjmfx5ta7hh6/JODHPUR.jpg?rlkey=texesuw3z33xwyuut52wscx7t&raw=1" alt="Clock Tower & Sardar Market">
+        <div><b>Clock Tower & Sardar Market</b> – Lively bazaar for spices, textiles & handicrafts <span class="toggle-icon">➕</span>
+          <div class="details">
+            The bustling Sardar Market around the Ghanta Ghar (Clock Tower) is a shopper’s paradise for spices, textiles, handicrafts and street food. Experience local life, taste regional snacks and shop for bandhani, lac bangles and brassware.
+          </div>
+        </div>
+      </div>
+
+      <div class="attraction" onclick="toggleAttraction(this)">
+        <img src="https://www.dropbox.com/scl/fi/4n6ztq6qkhmj9pn9gvyy9/Jodhpur2.jpeg?rlkey=g30mww2208h7eawv2tprx2e41&raw=1" alt="Rao Jodha Desert Rock Park">
+        <div><b>Rao Jodha Desert Rock Park</b> – Restored arid-land habitat & walking trails <span class="toggle-icon">➕</span>
+          <div class="details">
+            Created to restore native vegetation after quarrying near Mehrangarh, the park offers trails and interpretation panels about Thar ecology, local plants and traditional uses—good for short nature walks close to the city.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="facts">
+      <div><b>Best Time:</b> Oct–Mar</div>
+      <div><b>Nearest Airport:</b> Jodhpur Airport (8 km)</div>
+      <div><b>Railway:</b> Jodhpur Junction</div>
+      <div><b>Stay:</b> 1–3 days</div>
+    </div>
+
+    <h2>Suggested Itinerary</h2>
+    <p><b>1 Day:</b> Mehrangarh Fort → Jaswant Thada → Clock Tower & bazaar.</p>
+    <p><b>2 Days:</b> Day 1 as above, Day 2 Umaid Bhawan, Rao Jodha Park and sunset at a fort rampart.</p>
+
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="https://www.dropbox.com/scl/fi/2kqgmwtn0kjmfx5ta7hh6/JODHPUR.jpg?rlkey=texesuw3z33xwyuut52wscx7t&raw=1" alt="Mehrangarh Fort">
+      <img src="https://www.dropbox.com/scl/fi/4n6ztq6qkhmj9pn9gvyy9/Jodhpur2.jpeg?rlkey=g30mww2208h7eawv2tprx2e41&raw=1" alt="Umaid Bhawan">
+      <img src="https://www.dropbox.com/scl/fi/bz69l7j8rabgtbgp7wmtv/Jodhpur3.jpeg?rlkey=0hihujbxoy86g5z5tu8igkfsc&raw=1" alt="Jaswant Thada">
+    </div>
+
+    <h2>How to Reach</h2>
+    <p><b>Air:</b> Jodhpur Airport (8 km).<br>
+       <b>Rail:</b> Jodhpur Junction, well-connected with major Indian cities.<br>
+       <b>Road:</b> National highways and expressways link Jodhpur to Jaipur, Ajmer and Gujarat.</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117325.0!2d72.9939!3d26.2910!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjbCsDE3JzU0LjAiTiA3MsKwNTknMzAuMCJF!5e0!3m2!1sen!2sin!4v1234567890" allowfullscreen></iframe>
+
+    <h2>Contact & Booking</h2>
+    <p>📞 <a href="tel:+918107612691">+91-8107612691</a><br>
+       💬 <a href="https://wa.me/918107612691" target="_blank">Chat on WhatsApp</a><br>
+       ✉️ <a href="mailto:lodhwaal@hotmail.com">lodhwaal@hotmail.com</a></p>
+    <a href="https://wa.me/918107612691?text=I%20want%20to%20plan%20a%20trip%20to%20Jodhpur" class="plan-btn" target="_blank">📌 Plan My Trip</a>
+
+    <a href="index.html" class="btn-back">⬅ Back to Rajasthan Tourism</a>
+  </div>
+
+  <footer>
+    © 2025 Rajasthan Tourism by Rajesh Meena | <a href="index.html">Home</a>
+  </footer>
+
+  <script>
+    function toggleInfo() {
+      const moreInfo = document.getElementById("moreInfo");
+      const btn = document.getElementById("infoBtn");
+      if (moreInfo.style.maxHeight) {
+        moreInfo.style.maxHeight = null;
+        btn.textContent = "From Indus to Blue City ⬇";
+      } else {
+        moreInfo.style.maxHeight = moreInfo.scrollHeight + "px";
+        btn.textContent = "Collapse Timeline ⬆";
+      }
+    }
+
+    function toggleAttraction(el){
+      const details = el.querySelector('.details');
+      const icon = el.querySelector('.toggle-icon');
+      if(details.style.display === 'block'){
+        details.style.display = 'none'; icon.textContent = '➕';
+      } else { details.style.display = 'block'; icon.textContent = '➖'; }
+    }
+  </script>
+</body>
+</html>
