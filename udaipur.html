@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Udaipur – The City of Lakes | Rajasthan Tourism</title>
+  <meta name="description" content="Udaipur, the City of Lakes of Rajasthan. Explore City Palace, Lake Pichola, Jag Mandir, Fateh Sagar, Sajjangarh and history from Indus Valley to modern times.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="Udaipur – The City of Lakes | Rajasthan Tourism">
+  <meta property="og:description" content="Plan your Udaipur trip: palaces, lakes, gardens, and history from Indus Valley to today.">
+  <meta property="og:image" content="https://www.dropbox.com/scl/fi/w0l2xijda434frr30wqzd/udaipur-city-palace.jpg?rlkey=q7ewtfmg9rdvzj7prij4vog2l&st=lh89l6ju&raw=1">
+  <style>
+    body {font-family: "Lucida Handwriting", cursive; margin:0; padding:0; background:#fff; color:#222; line-height:1.6;}
+    header {background:url('https://www.dropbox.com/scl/fi/w0l2xijda434frr30wqzd/udaipur-city-palace.jpg?rlkey=q7ewtfmg9rdvzj7prij4vog2l&st=lh89l6ju&raw=1') center/cover no-repeat; height:260px; display:flex; align-items:center; justify-content:center; color:#fff; text-shadow:0 2px 6px rgba(0,0,0,0.7);}    
+    header h1 {font-size:34px; background:rgba(0,0,0,0.5); padding:10px 20px; border-radius:6px;}
+    nav {background:#1c7ea5; padding:10px; text-align:center;}
+    nav a {color:#fff; margin:0 10px; text-decoration:none; font-weight:bold;}
+    nav a:hover {text-decoration:underline;}
+    nav .active {text-decoration:underline; color:#ffd700;}
+    .container {max-width:900px; margin:auto; padding:20px;}
+    h2 {color:#1c7ea5; margin-top:30px;}
+    .facts {display:flex; gap:20px; flex-wrap:wrap; background:#f9f9f9; border-left:4px solid #1c7ea5; padding:12px; border-radius:6px;}
+    .facts div {flex:1 1 200px;}
+    .attractions {display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:18px;}
+    .attraction {border:1px solid #ddd; border-radius:6px; overflow:hidden; background:#fafafa; box-shadow:0 2px 4px rgba(0,0,0,0.1); cursor:pointer; transition:transform 0.2s, box-shadow 0.2s;}
+    .attraction:hover {transform:scale(1.02); box-shadow:0 4px 8px rgba(0,0,0,0.15);}
+    .attraction img {width:100%; height:160px; object-fit:cover;}
+    .attraction div {padding:10px;}
+    .details {display:none; margin-top:8px; font-size:14px; color:#444;}
+    .toggle-icon {float:right; font-size:16px; color:#1c7ea5;}
+    .gallery {display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:10px; margin-top:15px;}
+    .gallery img {width:100%; border-radius:6px;}
+    footer {text-align:center; padding:15px; margin-top:30px; font-size:14px; background:#f0f0f0;}
+    a {color:#1c7ea5; text-decoration:none;}
+    a:hover {text-decoration:underline;}
+    .btn-back {display:inline-block; margin-top:20px; padding:8px 14px; background:#1c7ea5; color:#fff; border-radius:4px;}
+    #moreInfo {max-height:0; overflow:hidden; transition:max-height 0.4s ease;}
+    #infoBtn {margin-top:10px; padding:6px 12px; background:#1c7ea5; color:#fff; border:none; border-radius:4px; cursor:pointer;}
+    .plan-btn {display:block; margin:20px auto; text-align:center; padding:10px 20px; background:#28a745; color:#fff; border-radius:6px; width:max-content; font-size:16px;}
+    iframe {width:100%; height:280px; border:0; margin-top:15px; border-radius:6px;}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Udaipur – The City of Lakes</h1>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="jaipur.html">Jaipur</a>
+    <a href="jodhpur.html">Jodhpur</a>
+    <a href="jaisalmer.html">Jaisalmer</a>
+    <a href="udaipur.html" class="active">Udaipur</a>
+    <a href="pushkar.html">Pushkar</a>
+    <a href="ajmer.html">Ajmer</a>
+    <a href="bikaner.html">Bikaner</a>
+    <a href="mount-abu.html">Mount Abu</a>
+    <a href="chittorgarh.html">Chittorgarh</a>
+  </nav>
+
+  <div class="container">
+    <h2>About Udaipur</h2>
+    <p>
+      Udaipur, often called the “Venice of the East,” is famed for its shimmering lakes, marble palaces and romantic ambience. Founded by Maharana Udai Singh II in 1559, it is the historic capital of Mewar.
+    </p>
+
+    <!-- Collapsible History Section -->
+    <div id="moreInfo">
+      <p>
+        The Mewar region has been inhabited since early times, with traces of Chalcolithic and later tribal settlements. Udaipur was established in <b>1559 CE</b> by Udai Singh II after the fall of Chittorgarh. It grew as the capital of the Sisodia Rajputs, resisting Mughal influence and later entering alliances with the Marathas and British. Today it is celebrated for its palaces, lakes, gardens and rich cultural traditions.
+      </p>
+      <ul>
+        <li><b>c. 2000–1000 BCE:</b> Chalcolithic sites and tribal habitation in Mewar plains.</li>
+        <li><b>6th–13th c.:</b> Rise of Sisodia Rajputs; stronghold at Chittorgarh.</li>
+        <li><b>1559 CE:</b> Maharana Udai Singh II establishes Udaipur after losing Chittorgarh to Mughals.</li>
+        <li><b>16th–18th c.:</b> Mewar capital flourishes with palaces, gardens, temples; often in conflict yet maintaining independence from Mughals.</li>
+        <li><b>19th c.:</b> Treaty with British ensures princely status; modernization begins.</li>
+        <li><b>1947–present:</b> Integration into Rajasthan; Udaipur becomes a global tourist destination and cultural hub.
+        </li>
+      </ul>
+    </div>
+    <button onclick="toggleInfo()" id="infoBtn">From Indus to City of Lakes ⬇</button>
+
+    <h2>Top Attractions</h2>
+    <div class="attractions">
+      <div class="attraction" onclick="toggleAttraction(this)">
+        <img src="https://www.dropbox.com/scl/fi/w0l2xijda434frr30wqzd/udaipur-city-palace.jpg?rlkey=q7ewtfmg9rdvzj7prij4vog2l&st=lh89l6ju&raw=1" alt="City Palace">
+        <div><b>City Palace</b> – Iconic palace complex on Lake Pichola <span class="toggle-icon">➕</span>
+          <div class="details">
+            Built over centuries, City Palace is a magnificent blend of Rajasthani and Mughal architecture. It houses museums, courtyards, balconies and offers panoramic views of the lake.
+          </div>
+        </div>
+      </div>
+
+      <div class="attraction" onclick="toggleAttraction(this)">
+        <img src="https://www.dropbox.com/scl/fi/n4zq0ujcv87wv8rvqe2nl/pichola.jpg?rlkey=d9rt6kn4jy05443vgxcuhs0ej&st=ec7ym79i&raw=1" alt="Lake Pichola">
+        <div><b>Lake Pichola</b> – Boat rides & island palaces <span class="toggle-icon">➕</span>
+          <div class="details">
+            Created in 1362, Lake Pichola is surrounded by palaces and ghats. A boat ride offers stunning views of Jag Mandir and the famous Lake Palace.
+          </div>
+        </div>
+      </div>
+
+      <div class="attraction" onclick="toggleAttraction(this)">
+        <img src="https://www.dropbox.com/scl/fi/v1wvhog1s4fgmmc0vpy4r/sajjangarh.jpg?rlkey=7wib8u0eogy9j5h8cwtqv0pdm&st=dviio095&raw=1" alt="Sajjangarh (Monsoon Palace)">
+        <div><b>Sajjangarh (Monsoon Palace)</b> – Hilltop fort with sunset views <span class="toggle-icon">➕</span>
+          <div class="details">
+            Perched on a hill, the 19th-century Sajjangarh Palace overlooks Fateh Sagar and the city. It is famed for sunset vistas and as a monsoon retreat.
+          </div>
+        </div>
+      </div>
+
+      <div class="attraction" onclick="toggleAttraction(this)">
+        <img src="https://www.dropbox.com/scl/fi/2yhrrusi1big6xvpuj12g/jag-mandir.jpg?rlkey=4f6bmov9xci1m6jtsoxxvebgt&st=lo5oz313&raw=1" alt="Jag Mandir">
+        <div><b>Jag Mandir</b> – Island palace on Lake Pichola <span class="toggle-icon">➕</span>
+          <div class="details">
+            Built by Maharanas of Mewar, Jag Mandir is a serene island retreat with marble chhatris, gardens and stunning lake surroundings.
+          </div>
+        </div>
+      </div>
+
+      <div class="attraction" onclick="toggleAttraction(this)">
+        <img src="https://www.dropbox.com/scl/fi/htkrlcmxixjf2eepj1p0l/fatehsagar.png?rlkey=6j7h1mlq99hbrm3yip41790av&st=7qd6w72p&raw=1" alt="Fateh Sagar Lake">
+        <div><b>Fateh Sagar Lake</b> – Scenic lake with boat rides & parks <span class="toggle-icon">➕</span>
+          <div class="details">
+            Fateh Sagar, with its three islands, offers boating, Nehru Park and views of surrounding hills—a popular leisure spot for visitors and locals.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="facts">
+      <div><b>Best Time:</b> Sep–Mar</div>
+      <div><b>Nearest Airport:</b> Maharana Pratap Airport (22 km)</div>
+      <div><b>Railway:</b> Udaipur City Station</div>
+      <div><b>Stay:</b> 2–3 days</div>
+    </div>
+
+    <h2>Suggested Itinerary</h2>
+    <p><b>1 Day:</b> City Palace → Lake Pichola boat ride → Jag Mandir.</p>
+    <p><b>2 Days:</b> Day 1 as above, Day 2 Sajjangarh, Fateh Sagar, local markets.</p>
+
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="https://www.dropbox.com/scl/fi/w0l2xijda434frr30wqzd/udaipur-city-palace.jpg?rlkey=q7ewtfmg9rdvzj7prij4vog2l&st=lh89l6ju&raw=1" alt="City Palace">
+      <img src="https://www.dropbox.com/scl/fi/n4zq0ujcv87wv8rvqe2nl/pichola.jpg?rlkey=d9rt6kn4jy05443vgxcuhs0ej&st=ec7ym79i&raw=1" alt="Lake Pichola">
+      <img src="https://www.dropbox.com/scl/fi/v1wvhog1s4fgmmc0vpy4r/sajjangarh.jpg?rlkey=7wib8u0eogy9j5h8cwtqv0pdm&st=dviio095&raw=1" alt="Sajjangarh Palace">
+    </div>
+
+    <h2>How to Reach</h2>
+    <p><b>Air:</b> Maharana Pratap Airport (22 km).<br>
+       <b>Rail:</b> Udaipur City Station, connected to Delhi, Jaipur, Ahmedabad.<br>
+       <b>Road:</b> National Highways link Udaipur to Jaipur, Mount Abu and Gujarat.</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117305.0!2d73.6833!3d24.5833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDM1JzAwLjAiTiA3M8KwNDAnMDAuMCJF!5e0!3m2!1sen!2sin!4v1234567890" allowfullscreen></iframe>
+
+    <h2>Contact & Booking</h2>
+    <p>📞 <a href="tel:+918107612691">+91-8107612691</a><br>
+       💬 <a href="https://wa.me/918107612691" target="_blank">Chat on WhatsApp</a><br>
+       ✉️ <a href="mailto:lodhwaal@hotmail.com">lodhwaal@hotmail.com</a></p>
+    <a href="https://wa.me/918107612691?text=I%20want%20to%20plan%20a%20trip%20to%20Udaipur" class="plan-btn" target="_blank">📌 Plan My Trip</a>
+
+    <a href="index.html" class="btn-back">⬅ Back to Rajasthan Tourism</a>
+  </div>
+
+  <footer>
+    © 2025 Rajasthan Tourism by Rajesh Meena | <a href="index.html">Home</a>
+  </footer>
+
+  <script>
+    function toggleInfo() {
+      const moreInfo = document.getElementById("moreInfo");
+      const btn = document.getElementById("infoBtn");
+      if (moreInfo.style.maxHeight) {
+        moreInfo.style.maxHeight = null;
+        btn.textContent = "From Indus to City of Lakes ⬇";
+      } else {
+        moreInfo.style.maxHeight = moreInfo.scrollHeight + "px";
+        btn.textContent = "Collapse Timeline ⬆";
+      }
+    }
+
+    function toggleAttraction(el){
+      const details = el.querySelector('.details');
+      const icon = el.querySelector('.toggle-icon');
+      if(details.style.display === 'block'){
+        details.style.display = 'none'; icon.textContent = '➕';
+      } else { details.style.display = 'block'; icon.textContent = '➖'; }
+    }
+  </script>
+</body>
+</html>
