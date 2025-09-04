@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Jaipur – Pink City | Rajasthan Tourism</title>
+  <meta name="description" content="Jaipur, the Pink City of Rajasthan. Explore Amber Fort, Hawa Mahal, Jantar Mantar, Nahargarh Fort, vibrant bazaars, and rich history from Indus Valley to modern times.">
+  <meta name="keywords" content="Jaipur tourism, Rajasthan forts, Amber Fort, Hawa Mahal, Nahargarh, Jantar Mantar, Jaipur bazaars, Pink City travel">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="Jaipur – The Pink City | Rajasthan Tourism">
+  <meta property="og:description" content="Plan your Jaipur trip: forts, palaces, markets, and history from Indus Valley to modern Rajasthan.">
+  <meta property="og:image" content="https://www.dropbox.com/scl/fi/n6yq5f4tn2lbljnqi137y/hawamahal.jpg?rlkey=8b04k01bajegrmvjonar9bpac&raw=1">
+  <style>
+    body {font-family: Arial, sans-serif; margin:0; padding:0; background:#fff; color:#222; line-height:1.6;}
+    header {background:url('https://www.dropbox.com/scl/fi/epq0sdcggik1mmaxp5ic0/jaipurnahargarh.jpg?rlkey=86rwx3elnp4tumyv0a9u84sb2&raw=1') center/cover no-repeat; height:260px; display:flex; align-items:center; justify-content:center; color:#fff; text-shadow:0 2px 6px rgba(0,0,0,0.7);}
+    header h1 {font-size:34px; background:rgba(0,0,0,0.5); padding:10px 20px; border-radius:6px;}
+    nav {background:#b35300; padding:10px; text-align:center;}
+    nav a {color:#fff; margin:0 10px; text-decoration:none; font-weight:bold;}
+    nav a:hover {text-decoration:underline;}
+    nav .active {text-decoration:underline; color:#ffd700;}
+    .container {max-width:900px; margin:auto; padding:20px;}
+    h2 {color:#b35300; margin-top:30px;}
+    .facts {display:flex; gap:20px; flex-wrap:wrap; background:#f9f9f9; border-left:4px solid #c49b00; padding:12px; border-radius:6px;}
+    .facts div {flex:1 1 200px;}
+    .attractions {display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:18px;}
+    .attraction {border:1px solid #ddd; border-radius:6px; overflow:hidden; background:#fafafa; box-shadow:0 2px 4px rgba(0,0,0,0.1); cursor:pointer; transition:transform 0.2s, box-shadow 0.2s;}
+    .attraction:hover {transform:scale(1.02); box-shadow:0 4px 8px rgba(0,0,0,0.15);}
+    .attraction img {width:100%; height:160px; object-fit:cover;}
+    .attraction div {padding:10px;}
+    .details {display:none; margin-top:8px; font-size:14px; color:#444;}
+    .toggle-icon {float:right; font-size:16px; color:#b35300;}
+    .gallery {display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:10px; margin-top:15px;}
+    .gallery img {width:100%; border-radius:6px;}
+    footer {text-align:center; padding:15px; margin-top:30px; font-size:14px; background:#f0f0f0;}
+    a {color:#b35300; text-decoration:none;}
+    a:hover {text-decoration:underline;}
+    .btn-back {display:inline-block; margin-top:20px; padding:8px 14px; background:#c49b00; color:#fff; border-radius:4px;}
+    #moreInfo {max-height:0; overflow:hidden; transition:max-height 0.4s ease;}
+    #infoBtn {margin-top:10px; padding:6px 12px; background:#b35300; color:#fff; border:none; border-radius:4px; cursor:pointer;}
+    .plan-btn {display:block; margin:20px auto; text-align:center; padding:10px 20px; background:#28a745; color:#fff; border-radius:6px; width:max-content; font-size:16px;}
+    iframe {width:100%; height:280px; border:0; margin-top:15px; border-radius:6px;}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Jaipur – The Pink City</h1>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="jaipur.html" class="active">Jaipur</a>
+    <a href="jodhpur.html">Jodhpur</a>
+    <a href="udaipur.html">Udaipur</a>
+    <a href="jaisalmer.html">Jaisalmer</a>
+    <a href="pushkar.html">Pushkar</a>
+    <a href="ajmer.html">Ajmer</a>
+    <a href="bikaner.html">Bikaner</a>
+    <a href="mount-abu.html">Mount Abu</a>
+    <a href="chittorgarh.html">Chittorgarh</a>
+  </nav>
+
+  <div class="container">
+    <h2>About Jaipur</h2>
+    <p>
+      Jaipur, the capital of Rajasthan, is famous for its pink-hued old city, royal palaces, forts, and lively markets. 
+      A part of the Golden Triangle, it combines heritage with modern charm.
+    </p>
+
+    <!-- Collapsible History Section -->
+    <div id="moreInfo">
+      <p>
+        Jaipur’s region has been inhabited since ancient times. Archaeological traces link it to the late Harappan/Indus cultural zone; 
+        indigenous tribal communities — notably the <b>Meena</b> — shaped early settlement, agriculture and local governance. 
+        Over centuries the area saw Vedic, Mauryan and Gupta influence, followed by Rajput consolidation at Amber, Mughal alliances, 
+        and the planned founding of Jaipur by Maharaja Sawai Jai Singh II in <b>1727</b>. 
+        Under colonial rule Jaipur remained a princely state; after independence it became Rajasthan’s capital and a modern heritage city.
+      </p>
+      <ul>
+        <li><b>c. 2500–1700 BCE:</b> Indus/Harappan cultural traces near the Aravallis/Bairat.</li>
+        <li><b>c. 1500–300 BCE:</b> Matsya Mahajanapada; early Vedic activity; Meena tribal presence.</li>
+        <li><b>321 BCE–550 CE:</b> Mauryan & Gupta periods — Buddhist sites, Ashokan rock edicts.</li>
+        <li><b>7th–16th c.:</b> Rajput rise; Kachwaha rule at Amber; Meena agrarian communities continue.</li>
+        <li><b>16th–18th c.:</b> Mughal–Kachwaha alliance; Amber Fort expanded; cultural synthesis.</li>
+        <li><b>1727 CE:</b> Sawai Jai Singh II founds Jaipur — India’s first major planned city.</li>
+        <li><b>19th–20th c.:</b> Princely state under British; painted pink in 1876 for Prince of Wales visit.</li>
+        <li><b>1949–present:</b> Integration into India; capital of Rajasthan; UNESCO World Heritage City (2019).</li>
+      </ul>
+    </div>
+    <button onclick="toggleInfo()" id="infoBtn">From Indus to Pink City ⬇</button>
+
+    <h2>Top Attractions</h2>
+    <div class="attractions">
+      <div class="attraction" onclick="toggleAttraction(this)">
+        <img src="https://www.dropbox.com/scl/fi/8uj4y805pztv6uw7bnhhk/amber.jpg?rlkey=4fgz0n8ghm9xwfm73ayuox73y&raw=1" alt="Amber Fort Jaipur">
+        <div><b>Amber Fort</b> – Hilltop fort with elephant rides & evening light show <span class="toggle-icon">➕</span>
+          <div class="details">
+            Built in 1592 by Raja Man Singh I, Amber Fort is a UNESCO World Heritage Site and one of the most important Rajput forts in India. 
+            It blends Hindu and Mughal styles with massive gates, courtyards, and palaces. The Sheesh Mahal (Mirror Palace) dazzles with thousands of reflective pieces. 
+            The Diwan-i-Aam and Sukh Niwas demonstrate ingenious design, with water channels used for natural cooling. 
+            Elephant rides to the fort and the evening sound-and-light show make it one of Jaipur’s most memorable experiences.
+          </div>
+        </div>
+      </div>
+
+      <div class="attraction" onclick="toggleAttraction(this)">
+        <img src="https://www.dropbox.com/scl/fi/n6yq5f4tn2lbljnqi137y/hawamahal.jpg?rlkey=8b04k01bajegrmvjonar9bpac&raw=1" alt="Hawa Mahal Jaipur">
+        <div><b>Hawa Mahal</b> – Iconic palace with 953 latticed windows <span class="toggle-icon">➕</span>
+          <div class="details">
+            Constructed in 1799 by Maharaja Sawai Pratap Singh, Hawa Mahal (Palace of Winds) is Jaipur’s most iconic landmark. 
+            Its five-story pink sandstone façade resembles a honeycomb and has 953 jharokhas (latticed windows), 
+            designed to allow royal women to watch festivals and city life unseen. 
+            The structure represents the crown of Lord Krishna and exemplifies Rajput artistry. 
+            Inside, narrow passages and small chambers ensure ventilation, keeping the palace cool even in summer. 
+            A museum inside exhibits miniature paintings, armory, and artifacts.
+          </div>
+        </div>
+      </div>
+
+      <div class="attraction" onclick="toggleAttraction(this)">
+        <img src="https://www.dropbox.com/scl/fi/s9gpm9eaqtuhpbnj6dw6f/jantarmantar.jpg?rlkey=395vxy35oakxi048tyvz0k93t&raw=1" alt="Jantar Mantar Jaipur">
+        <div><b>Jantar Mantar</b> – UNESCO astronomical observatory <span class="toggle-icon">➕</span>
+          <div class="details">
+            Built in 1734 by Maharaja Jai Singh II, Jantar Mantar is an astronomical observatory and UNESCO World Heritage Site. 
+            It houses 19 large-scale instruments for tracking celestial bodies, predicting eclipses, and measuring time. 
+            The highlight is the Samrat Yantra, the world’s largest stone sundial, accurate to within 2 seconds. 
+            Jai Singh II’s vision of combining science and culture is preserved here, making it one of the most important observatories in India.
+          </div>
+        </div>
+      </div>
+
+      <div class="attraction" onclick="toggleAttraction(this)">
+        <img src="https://www.dropbox.com/scl/fi/cjy9k3ho0mhtew0whssz1/nahargarh.jpg?rlkey=fksg6ll3q8oh1ge3r2v0v3if2&raw=1" alt="Nahargarh Fort Jaipur">
+        <div><b>Nahargarh Fort</b> – Famous for panoramic city views & sunsets <span class="toggle-icon">➕</span>
+          <div class="details">
+            Built in 1734 by Sawai Jai Singh II, Nahargarh Fort crowns the Aravalli hills overlooking Jaipur. 
+            It served as both a retreat and a defensive bastion. Madhavendra Bhawan inside contains a series of suites for the king and his queens, 
+            each connected by corridors. According to legend, the fort is named after Nahar Singh Bhomia, a spirit believed to haunt the site. 
+            Nahargarh offers the most stunning sunset views over Jaipur and played a role in sheltering locals during the 1857 uprising.
+          </div>
+        </div>
+      </div>
+
+      <div class="attraction" onclick="toggleAttraction(this)">
+        <img src="https://www.dropbox.com/scl/fi/4jc5yqxlzggyqgz5ea35e/Aravali-Bazaar.jpg?rlkey=3r1mp3qwrvv64zs31t2bjxif1&raw=1" alt="Jaipur Bazaars">
+        <div><b>Bazaars</b> – Johari, Bapu & Tripolia markets for gems & textiles <span class="toggle-icon">➕</span>
+          <div class="details">
+            Jaipur’s bazaars are a window into its living culture. Johari Bazaar is world-famous for its gemstones, meenakari work, and gold jewelry. 
+            Bapu Bazaar showcases colorful textiles, bandhani fabrics, handicrafts, perfumes, and traditional mojari shoes. 
+            Tripolia Bazaar is known for lacquer bangles, brassware, and ironware. 
+            These vibrant markets preserve centuries-old craftsmanship including block printing, blue pottery, and stone carving, 
+            making them essential stops for visitors seeking authentic Rajasthani heritage.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="facts">
+      <div><b>Best Time:</b> Oct–Mar</div>
+      <div><b>Nearest Airport:</b> Jaipur Intl. (12 km)</div>
+      <div><b>Railway:</b> Jaipur Junction</div>
+      <div><b>Stay:</b> 2–3 days</div>
+    </div>
+
+    <h2>Suggested Itinerary</h2>
+    <p><b>1 Day:</b> Amber Fort → City Palace & Jantar Mantar → Hawa Mahal & bazaars.</p>
+    <p><b>2 Days:</b> Day 1 as above, Day 2 explore Nahargarh, Albert Hall Museum & shopping.</p>
+
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="https://www.dropbox.com/scl/fi/epq0sdcggik1mmaxp5ic0/jaipurnahargarh.jpg?rlkey=86rwx3elnp4tumyv0a9u84sb2&raw=1" alt="Amber Fort Jaipur">
+      <img src="https://www.dropbox.com/scl/fi/uuv18qdn1roiqvy4dpmeb/jaipur2.jpg?rlkey=kr1el6fqt4vqn2fbr8j8lpxbw&raw=1" alt="Hawa Mahal Jaipur">
+      <img src="https://www.dropbox.com/scl/fi/vioifmwahrgfdyulx9ln4/jaipur3.jpg?rlkey=kcvajey0z2phhbla5o1mrgw37&raw=1" alt="City Palace Jaipur">
+    </div>
+
+    <h2>How to Reach</h2>
+    <p><b>Air:</b> Jaipur International Airport (12 km).<br>
+       <b>Rail:</b> Jaipur Junction, well-connected with Delhi, Mumbai, Kolkata.<br>
+       <b>Road:</b> National highways link Jaipur with major cities.</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.5175654911556!2d75.7872704!3d26.9124336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db3b9f7c90fdf%3A0x4d13e65a1d5d6b65!2sJaipur%2C%20Rajasthan!5e0!3m2!1sen!2sin!4v1693759200000!5m2!1sen!2sin" allowfullscreen></iframe>
+
+    <h2>Contact & Booking</h2>
+    <p>📞 <a href="tel:+918107612691">+91-8107612691</a><br>
+       💬 <a href="https://wa.me/918107612691" target="_blank">Chat on WhatsApp</a><br>
+       ✉️ <a href="mailto:lodhwaal@hotmail.com">lodhwaal@hotmail.com</a></p>
+    <a href="https://wa.me/918107612691?text=I%20want%20to%20plan%20a%20trip%20to%20Jaipur" class="plan-btn" target="_blank">📌 Plan My Trip</a>
+
+    <a href="index.html" class="btn-back">⬅ Back to Rajasthan Tourism</a>
+  </div>
+
+  <footer>
+    © 2025 Rajasthan Tourism by Rajesh Meena | <a href="index.html">Home</a>
+  </footer>
+
+  <script>
+    function toggleInfo() {
+      const moreInfo = document.getElementById("moreInfo");
+      const btn = document.getElementById("infoBtn");
+      if (moreInfo.style.maxHeight) {
+        moreInfo.style.maxHeight = null;
+        btn.textContent = "From Indus to Pink City ⬇";
+      } else {
