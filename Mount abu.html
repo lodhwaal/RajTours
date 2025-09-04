@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Mount Abu – The Cool Oasis of Rajasthan | Rajasthan Tourism</title>
+  <meta name="description" content="Explore Mount Abu: Dilwara Temples, Nakki Lake, Guru Shikhar, Sunset Point, Achalgarh Fort.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="Mount Abu – The Cool Oasis of Rajasthan | Rajasthan Tourism">
+  <meta property="og:description" content="Plan your trip to Mount Abu: hill station, temples, lakes, and scenic viewpoints.">
+  <meta property="og:image" content="https://www.dropbox.com/scl/fi/tmj7ln8ky6x7mtryzmzut/dilwara-temple.jpg?rlkey=l7m3ju9z2ztbas55uyhp2uxao&raw=1">
+  <style>
+    body {font-family: "Brush Script MT", cursive, sans-serif; margin:0; padding:0; background:#fbfefc; color:#112; line-height:1.5; font-size:20px;}
+    header {background:url('https://www.dropbox.com/scl/fi/tmj7ln8ky6x7mtryzmzut/dilwara-temple.jpg?rlkey=l7m3ju9z2ztbas55uyhp2uxao&raw=1') center/cover no-repeat; height:280px; display:flex; align-items:center; justify-content:center; color:#fff; text-shadow:0 2px 6px rgba(0,0,0,0.6);}    
+    header h1 {font-size:44px; background:rgba(0,0,0,0.45); padding:14px 28px; border-radius:8px; font-style:italic;}
+    nav {background:#1e6f7a; padding:10px; text-align:center;}
+    nav a {color:#fff; margin:0 10px; text-decoration:none; font-weight:bold; font-style:italic; font-size:18px;}
+    nav a:hover {text-decoration:underline;}
+    nav .active {text-decoration:underline; color:#ffd700;}
+    .container {max-width:1000px; margin:auto; padding:22px; font-style:italic; font-size:20px;}
+    h2 {color:#185e63; margin-top:28px; font-style:italic; font-size:30px;}
+    .facts {display:flex; gap:18px; flex-wrap:wrap; background:#f0fcfb; border-left:4px solid #1e6f7a; padding:12px; border-radius:6px; font-size:20px; line-height:1.4;}
+    .facts div {flex:1 1 220px;}
+    .attractions {display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:18px; margin-top:14px;}
+    .attraction {border:1px solid #d7eae9; border-radius:8px; overflow:hidden; background:#ffffff; box-shadow:0 2px 6px rgba(0,0,0,0.06); cursor:pointer; transition:transform 0.18s, box-shadow 0.18s;}
+    .attraction:hover {transform:translateY(-4px); box-shadow:0 8px 20px rgba(0,0,0,0.08);}
+    .attraction img {width:100%; height:220px; object-fit:cover;}
+    .attraction div {padding:14px; font-size:20px; line-height:1.45;}
+    .details {display:none; margin-top:10px; font-size:18px; color:#355; line-height:1.45;}
+    .toggle-icon {float:right; font-size:18px; color:#1e6f7a;}
+    footer {text-align:center; padding:16px; margin-top:28px; font-size:16px; background:#f3f7f7; font-style:italic;}
+    a {color:#1e6f7a; text-decoration:none;}
+    a:hover {text-decoration:underline;}
+    #moreInfo {max-height:0; overflow:hidden; transition:max-height 0.36s ease; line-height:1.45;}
+    #infoBtn {margin-top:12px; padding:8px 14px; background:#1e6f7a; color:#fff; border:none; border-radius:6px; cursor:pointer; font-style:italic; font-size:18px;}
+    iframe {width:100%; height:320px; border:0; margin-top:16px; border-radius:8px;}
+    @media (max-width:600px){ header{height:200px} .attraction img{height:160px} body{font-size:18px} }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Mount Abu – The Cool Oasis of Rajasthan</h1>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="jaipur.html">Jaipur</a>
+    <a href="jodhpur.html">Jodhpur</a>
+    <a href="jaisalmer.html">Jaisalmer</a>
+    <a href="udaipur.html">Udaipur</a>
+    <a href="pushkar.html">Pushkar</a>
+    <a href="ajmer.html">Ajmer</a>
+    <a href="bikaner.html">Bikaner</a>
+    <a href="mount-abu.html" class="active">Mount Abu</a>
+  </nav>
+
+  <div class="container">
+    <h2>About Mount Abu</h2>
+    <p>
+      Mount Abu is Rajasthan’s only hill station, a green refuge in the Aravalli range with cool weather, lakes, temples and panoramic viewpoints. It’s a popular weekend escape from the desert plains.
+    </p>
+
+    <div id="moreInfo">
+      <p>
+        Historically a retreat for rulers and spiritual seekers, Mount Abu grew around its sacred sites and strategic hilltop positions. The Dilwara temples (11th–13th c.) are masterpieces of marble craftsmanship.
+      </p>
+      <ul>
+        <li><b>Medieval period:</b> Temple building and local settlements.</li>
+        <li><b>11th–13th c.:</b> Dilwara Jain temples constructed with exquisite marble carving.</li>
+        <li><b>British era:</b> Became a favored hill retreat.</li>
+        <li><b>Today:</b> A mix of pilgrimage, nature, and cool-climate tourism.</li>
+      </ul>
+    </div>
+    <button onclick="toggleInfo()" id="infoBtn">Uncover Mount Abu’s Story ⬇</button>
+
+    <h2>Top Attractions</h2>
+    <div class="attractions">
+      <div class="attraction" onclick="toggleAttraction(this)">
+        <img src="https://www.dropbox.com/scl/fi/tmj7ln8ky6x7mtryzmzut/dilwara-temple.jpg?rlkey=l7m3ju9z2ztbas55uyhp2uxao&raw=1" alt="Dilwara Temples">
+        <div><b>Dilwara Temples</b> – Marble marvels <span class="toggle-icon">➕</span>
+          <div class="details">
+            A group of Jain temples famed for their stunning marble carving, ceilings and pillars — built between the 11th and 13th centuries.
+          </div>
+        </div>
+      </div>
+
+      <div class="attraction" onclick="toggleAttraction(this)">
+        <img src="https://www.dropbox.com/scl/fi/kilbcb894wdpb6whgx2h8/nakki-Lake.jpg?rlkey=1u4bcytdyzyvwtysheke01bxo&raw=1" alt="Nakki Lake">
+        <div><b>Nakki Lake</b> – Serene boating & promenades <span class="toggle-icon">➕</span>
+          <div class="details">
+            The lake sits in a natural valley, perfect for boat rides, leisurely walks and evenings by the water with cool mountain air.
+          </div>
+        </div>
+      </div>
+
+      <div class="attraction" onclick="toggleAttraction(this)">
+        <img src="https://www.dropbox.com/scl/fi/2s32hw9racg2duvcbw3vf/guru-shikhar.jpg?rlkey=c1rr2z73r6ljck3my1a4xnqr7&raw=1" alt="Guru Shikhar">
+        <div><b>Guru Shikhar</b> – Highest peak in Aravallis <span class="toggle-icon">➕</span>
+          <div class="details">
+            The summit offers panoramic views and a shrine; it's a short drive and walk up to the peak — ideal at sunrise.
+          </div>
+        </div>
+      </div>
+
+      <div class="attraction" onclick="toggleAttraction(this)">
+        <img src="https://www.dropbox.com/scl/fi/37yv26dufl7n54k071cif/sunset-point.jpg?rlkey=5ms3eii8w9nz9ykj9eugte24s&raw=1" alt="Sunset Point">
+        <div><b>Sunset Point</b> – Spectacular hilltop sunsets <span class="toggle-icon">➕</span>
+          <div class="details">
+            Short walk to a viewpoint that overlooks valleys and rocky outcrops — popular for evening gatherings and photography.
+          </div>
+        </div>
+      </div>
+
+      <div class="attraction" onclick="toggleAttraction(this)">
+        <img src="https://www.dropbox.com/scl/fi/7x6qne0hdzxuzwj2vsclz/achalgarh-fort.jpg?rlkey=9foax3hz49xu192ywq6hzcpxy&raw=1" alt="Achalgarh Fort">
+        <div><b>Achalgarh Fort</b> – Historic fort & temples <span class="toggle-icon">➕</span>
+          <div class="details">
+            Once a strategic fort, Achalgarh's ruins and nearby temples make for a scenic half-day trip with great views.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="facts">
+      <div><b>Best Time:</b> Oct–Feb</div>
+      <div><b>Nearest Airport:</b> Udaipur Airport (160 km)</div>
+      <div><b>Railway:</b> Abu Road Junction (28 km)</div>
+      <div><b>Stay:</b> 1–3 days</div>
+    </div>
+
+    <h2>Suggested Itinerary</h2>
+    <p><b>1 Day:</b> Dilwara Temples → Nakki Lake → Sunset Point.</p>
+    <p><b>2 Days:</b> Day 1 as above, Day 2 Guru Shikhar → Achalgarh Fort → local markets.</p>
+
+    <h2>How to Reach</h2>
+    <p><b>Air:</b> Udaipur Airport (160 km).<br>
+       <b>Rail:</b> Abu Road Junction (28 km).<br>
+       <b>Road:</b> Accessible by well-maintained hill roads from Udaipur and Ahmedabad.</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31630.0!2d72.7090!3d24.5926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDM1JzAwLjAiTiA3MsKwNDInMDAuMCJF!5e0!3m2!1sen!2sin!4v1234567890" allowfullscreen></iframe>
+  </div>
+
+  <footer>
+    © 2025 Rajasthan Tourism by Rajesh Meena
+  </footer>
+
+  <script>
+    function toggleInfo() {
+      const moreInfo = document.getElementById("moreInfo");
+      const btn = document.getElementById("infoBtn");
+      if (moreInfo.style.maxHeight) {
+        moreInfo.style.maxHeight = null;
+        btn.textContent = "Uncover Mount Abu’s Story ⬇";
+      } else {
+        moreInfo.style.maxHeight = moreInfo.scrollHeight + "px";
+        btn.textContent = "Collapse Timeline ⬆";
+      }
+    }
+
+    function toggleAttraction(el){
+      const details = el.querySelector('.details');
+      const icon = el.querySelector('.toggle-icon');
+      if(details.style.display === 'block'){
+        details.style.display = 'none'; icon.textContent = '➕';
+      } else { details.style.display = 'block'; icon.textContent = '➖'; }
+    }
+  </script>
+</body>
+</html>
