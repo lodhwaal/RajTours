@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rajasthan Tourism</title>
+  <meta name="description" content="Rajasthan tourism guide with itineraries, maps, and contacts by Rajesh Meena.">
+  <style>
+    :root{--accent:#c49b00;--accent-dark:#b8860b}
+    html, body {margin:0; padding:0; font-family:"Brush Script MT",cursive; background:#fff; color:#222;}
+
+    /* HEADER */
+    .header{
+      max-width:1000px; margin:12px auto; padding:14px; background:#fffefb; border-left:6px solid var(--accent);
+      border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.06); display:flex; align-items:center; gap:18px;
+    }
+    .profile-left{flex:0 0 92px}
+    .profile-circle{width:92px;height:92px;border-radius:50%;overflow:hidden;border:4px solid #fff;background:#fff}
+    .profile-circle img{width:100%;height:100%;object-fit:cover;display:block}
+    .title-right{flex:1; text-align:right}
+    .title-right h1{margin:0;font-size:48px;letter-spacing:6px;color:var(--accent-dark);text-transform:uppercase;text-shadow:0 2px 8px rgba(0,0,0,0.15);}
+    .title-right p{margin:6px 0 0;font-size:14px;color:#6b4c1a}
+
+    /* intro */
+    .intro {max-width:1000px;margin:8px auto 18px;padding:10px 12px;font-size:18px;line-height:1.35;color:#2a2a2a}
+
+    /* CAROUSEL */
+    .fullwidth{position:relative;width:100%;overflow:hidden;margin-top:14px}
+    .carousel{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;gap:1px}
+    .carousel::-webkit-scrollbar{display:none}
+    .carousel img{flex:0 0 100%;scroll-snap-align:start;width:100%;height:340px;object-fit:cover;border-radius:6px}
+    .city-label{position:absolute;bottom:18px;left:50%;transform:translateX(-50%);font-size:20px;font-weight:700;font-style:italic;background:rgba(0,0,0,0.45);color:#fff;padding:6px 12px;border-radius:6px}
+    .city-label a{color:#fff;text-decoration:none}
+
+    .dots{text-align:center;margin:8px 0 18px}
+    .dots span{display:inline-block;width:8px;height:8px;margin:0 4px;background:#ddd;border-radius:50%}
+    .dots .active{background:var(--accent)}
+
+    /* bottom sections */
+    .section {max-width:1000px;margin:16px auto;padding:14px;background:#f9f9f9;border-left:6px solid var(--accent);border-radius:6px}
+    .section h3{margin-top:0;color:var(--accent-dark)}
+    .section ul{margin:8px 0 0 18px}
+
+    /* contact layout */
+    .contact-grid{display:flex;gap:18px;flex-wrap:wrap;align-items:flex-start}
+    .contact-card{flex:1;min-width:260px}
+    .map-card{flex:1;min-width:280px}
+    .contact-card a{display:block;margin:6px 0;color:#1a0dab;text-decoration:none}
+    .plan-btn{display:inline-block;background:#28a745;color:#fff;padding:10px 16px;border-radius:6px;border:none;cursor:pointer}
+
+    footer{max-width:1000px;margin:24px auto;text-align:center;font-size:14px;color:#555;padding:12px 0;border-top:1px solid #eee}
+
+    @media (max-width:720px){
+      .title-right{text-align:left}
+      .title-right h1{font-size:34px}
+      .header{flex-direction:row;align-items:center}
+      .profile-circle{width:84px;height:84px}
+      .carousel img{height:280px}
+    }
+  </style>
+</head>
+<body>
+
+  <!-- header with profile left and big RAJASTHAN on right -->
+  <header class="header">
+    <div class="profile-left">
+      <div class="profile-circle">
+        <img src="https://www.dropbox.com/scl/fi/ztmhi2pp1qcnady4o2omv/me.png?rlkey=951lnf0gwjrsvg7nwaxz2w7i2&raw=1" alt="Rajesh">
+      </div>
+    </div>
+    <div class="title-right">
+      <h1>RAJASTHAN</h1>
+      <p>..The land of Rajesh Meena.. — forts, lakes, deserts & living traditions</p>
+    </div>
+  </header>
+
+  <div class="intro">Rajasthan famed for its royal forts, desert landscapes, lakes, and vibrant traditions. From Jaipur’s palaces to Udaipur’s lakes and Jaisalmer’s dunes, it offers an unforgettable journey into history and culture.</div>
+
+  <!-- carousels placeholder -->
+  <main id="cities"></main>
+
+  <!-- Services + Itinerary placed at bottom (visible, genuine) -->
+  <section class="section">
+    <h3>Our Services</h3>
+    <ul>
+      <li>All India Travel – Rajasthan + major India circuits</li>
+      <li>Private Car Rentals – Comfortable 5-seaters with drivers</li>
+      <li>Customized Tours – Heritage, culture, wildlife, adventure</li>
+      <li>Guided Sightseeing – Forts, palaces, temples, lakes, hidden gems</li>
+      <li>Flexible Options – Family, solo, group, special requests</li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h3>Suggested Itinerary (Sample)</h3>
+    <ul>
+      <li><b>Day 1–2 (Delhi):</b> Old Delhi tour, India Gate, Qutub Minar, markets.</li>
+      <li><b>Day 3 (Delhi → Jaipur):</b> Evening markets / Chokhi Dhani.</li>
+      <li><b>Day 4–5 (Jaipur):</b> Amber Fort, City Palace, Hawa Mahal, Nahargarh.</li>
+      <li><b>Day 6 (Jaipur → Jodhpur):</b> Mehrangarh Fort, blue lanes.</li>
+      <li><b>Day 7–8 (Jaisalmer):</b> Fort, Sam dunes camel safari & dune camp.</li>
+      <li><b>Day 9–10 (Udaipur):</b> City Palace, Lake Pichola boat, Saheliyon-ki-Bari.</li>
+      <li><b>Day 11–12:</b> Optional Ranthambore safari / Pushkar & Ajmer, then depart.</li>
+    </ul>
+  </section>
+
+  <!-- Contact + Map -->
+  <section class="section">
+    <div class="contact-grid">
+      <div class="contact-card">
+        <h3>📞 Contact & Booking</h3>
+        <a href="tel:+918107612691">📞 +91-8107612691</a>
+        <a href="https://wa.me/918107612691" target="_blank" rel="noopener noreferrer">💬 Chat on WhatsApp</a>
+        <a href="mailto:lodhwaal@hotmail.com">✉️ lodhwaal@hotmail.com</a>
+        <div style="margin-top:10px"><a class="plan-btn" href="https://wa.me/918107612691?text=I%20want%20to%20plan%20a%20trip" target="_blank">📌 Plan My Trip</a></div>
+      </div>
+      <div class="map-card">
+        <h3>🌏 Find Me in Rajasthan</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1141501.201!2d73.3!3d26.9!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396a3ef74f5b0a05%3A0xdeadbeef!2sRajasthan!5e0!3m2!1sen!2sin!4v1234567890" width="100%" height="240" style="border:0;border-radius:6px" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <footer>© 2025 Rajasthan Tourism by Rajesh Meena</footer>
+
+  <script>
+    // full city list with images and page links
+    const cities = [
+      {name:"Jaipur - Pink City", link:"jaipur.html", imgs:[
+        "https://www.dropbox.com/scl/fi/epq0sdcggik1mmaxp5ic0/jaipurnahargarh.jpg?rlkey=86rwx3elnp4tumyv0a9u84sb2&raw=1",
+        "https://www.dropbox.com/scl/fi/uuv18qdn1roiqvy4dpmeb/jaipur2.jpg?rlkey=kr1el6fqt4vqn2fbr8j8lpxbw&raw=1",
+        "https://www.dropbox.com/scl/fi/vioifmwahrgfdyulx9ln4/jaipur3.jpg?rlkey=kcvajey0z2phhbla5o1mrgw37&raw=1"
+      ]},
+      {name:"Jodhpur - Blue City", link:"jodhpur.html", imgs:[
+        "https://www.dropbox.com/scl/fi/2kqgmwtn0kjmfx5ta7hh6/JODHPUR.jpg?rlkey=texesuw3z33xwyuut52wscx7t&raw=1",
+        "https://www.dropbox.com/scl/fi/4n6ztq6qkhmj9pn9gvyy9/Jodhpur2.jpeg?rlkey=g30mww2208h7eawv2tprx2e41&raw=1",
+        "https://www.dropbox.com/scl/fi/bz69l7j8rabgtbgp7wmtv/Jodhpur3.jpeg?rlkey=0hihujbxoy86g5z5tu8igkfsc&raw=1"
+      ]},
+      {name:"Jaisalmer - Golden City", link:"jaisalmer.html", imgs:[
+        "https://www.dropbox.com/scl/fi/b7ckpivffiqcdiylzz211/jaisalmer2.jpg?rlkey=b2f2zb7icnr9nwdjdd92x3wle&raw=1",
+        "https://www.dropbox.com/scl/fi/es74ghzcsp4r3sgmfoapa/jaisalmer5.jpg?rlkey=d1s8yp947pvlhb453jj65vm35&raw=1",
+        "https://www.dropbox.com/scl/fi/ah7sp18g5meqgdapm42eh/jaisalmer2.jpg?rlkey=6an0fvhn8f3bzttm65qr8s61g&raw=1"
+      ]},
+      {name:"Udaipur - Lake City", link:"udaipur.html", imgs:[
+        "https://www.dropbox.com/scl/fi/56764lnbhcsq7xhfy24eb/udaipur.jpeg?rlkey=rbsl62em2jufxn4bq9ceexdgh&raw=1",
+        "https://www.dropbox.com/scl/fi/r60zyh64h82hazwxcpk5w/udaipur2.jpg?rlkey=fla4p6j6vmc22umsvmtzrtmjo&raw=1",
+        "https://www.dropbox.com/scl/fi/y68sudy3g2r4lbtw5s8mc/udaipur3.jpg?rlkey=eyqkk0kfhdjfu578o4lxrmza8&raw=1"
+      ]},
+      {name:"Mount Abu - Hill Station", link:"mountabu.html", imgs:[
+        "https://www.dropbox.com/scl/fi/mopygej7i4fk4143y56ak/abu-mt..jpeg?rlkey=1tnlfcat2cktawyhzc5oifx5r&raw=1",
+        "https://www.dropbox.com/scl/fi/r556qxbuyntxkr6zsqtml/about-mount-abu4.jpg?rlkey=kredmyvk0om256moa7tyyuk7b&raw=1"
+      ]},
+      {name:"Ajmer - Holy City", link:"ajmer.html", imgs:[
+        "https://www.dropbox.com/scl/fi/awvq9fhssg53i3aeoe7a0/answer-1.jpg?rlkey=isan268iqjldruxnlcsz7expn&raw=1",
+        "https://www.dropbox.com/scl/fi/z08n0r4g04w9lwulf9hmv/answer-2.jpg?rlkey=x6r5dydphmchretrikvbxg0ri&raw=1"
+      ]},
+      {name:"Chittorgarh - Fort City", link:"chittorgarh.html", imgs:[
+        "https://www.dropbox.com/scl/fi/8s2p4an5a9jw30s1ps03k/chittorgarh-1.jpg?rlkey=ewc0od54ap1somprfgfqtxjea&raw=1",
+        "https://www.dropbox.com/scl/fi/f93wj47ych4n90fx7dyj9/chittorgarh-2.jpg?rlkey=fwoqgwgrac5fqfaak8jobqd8e&raw=1"
+      ]},
+      {name:"Kota - Garden City", link:"kota.html", imgs:[
+        "https://www.dropbox.com/scl/fi/yxsj2euxov5j9d5q29joy/Screenshot_20250903-082527.Opera.png?rlkey=l9p4n56m8goib58r8c48qu11b&raw=1",
+        "https://www.dropbox.com/scl/fi/swz1lugrlzsy64a6ilgwe/ce517ddb-e075-445e-90b6-3f7d034c9b84-1.jpg?rlkey=jkc7xwnca9jhlq5undz7e7ekg&raw=1"
+      ]},
+      {name:"Kumbhalgarh - Great Wall", link:"kumbhalgarh.html", imgs:[
+        "https://www.dropbox.com/scl/fi/j1akbfshxw2zekidpxp7w/kumbhalgarh-fort.jpg?rlkey=34udphwpelpbufo50m8xfldmy&raw=1",
+        "https://www.dropbox.com/scl/fi/ye5c9k2ydwyq9cowueu5m/Kumbhalgarh2.jpg?rlkey=lhb79nb670nxenxew3iqu6fs1&raw=1",
+        "https://www.dropbox.com/scl/fi/e35ygz1rd7me59zw00sq1/Kumbhalgarh-01.jpg?rlkey=vw1q6hohpn5sasggjj23x2r9b&raw=1"
+      ]},
+      {name:"Ranthambore - Tiger Reserve", link:"ranthambore.html", imgs:[
+        "https://www.dropbox.com/scl/fi/thp93gkhrphsyqzvk1c0r/ranthambore-tiger-safari-500x500.jpg?rlkey=ynx8nt6nezb0nxq2ju2z966ld&raw=1",
+        "https://www.dropbox.com/scl/fi/67avs6maaciaw8w1u6zdg/ranthambore-sighting.jpg?rlkey=nbhr8bl68820udum7jl37fthy&raw=1"
+      ]}
+    ];
+
+    const container = document.getElementById('cities');
+
+    // build carousels
+    cities.forEach(city=>{
+      const block = document.createElement('section');
+      block.className = 'fullwidth';
+
+      const carousel = document.createElement('div');
+      carousel.className = 'carousel';
+
+      city.imgs.forEach(src => {
+        const img = document.createElement('img'); img.src = src; img.alt = city.name; carousel.appendChild(img);
+      });
+
+      const label = document.createElement('div'); label.className = 'city-label';
+      label.innerHTML = `<a href="${city.link}">${city.name}</a>`;
+
+      // dots
+      const dots = document.createElement('div'); dots.className='dots';
+      for(let i=0;i<city.imgs.length;i++){ const s=document.createElement('span'); if(i===0) s.classList.add('active'); s.addEventListener('click', ()=>{carousel.scrollTo({left:i*carousel.clientWidth,behavior:'smooth'})}); dots.appendChild(s);} 
+
+      // assemble
+      block.appendChild(carousel); block.appendChild(label); block.appendChild(dots); container.appendChild(block);
+
+      // scroll handling
+      carousel.addEventListener('scroll', ()=>{
+        const idx = Math.round(carousel.scrollLeft / carousel.clientWidth);
+        const all = dots.querySelectorAll('span'); all.forEach((d,i)=> d.classList.toggle('active', i===idx));
+      });
+
+      // keep snap on resize
+      window.addEventListener('resize', ()=>{
+        const idx = Math.round(carousel.scrollLeft / carousel.clientWidth);
+        carousel.scrollTo({left: idx * carousel.clientWidth});
+      });
+    });
+  </script>
+</body>
+</html>
