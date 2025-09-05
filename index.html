@@ -97,6 +97,90 @@
       <p>Forts · Lakes · Deserts — Rajesh Meena</p>
     </div>
   </header>
+  
+  <!-- Subtle Rajasthan History Button -->
+<style>
+  .light-history-btn {
+    background: #fdf3e7; /* light parchment-like */
+    color: #8B4513; /* brown text */
+    font-family: "Lucida Handwriting", cursive; /* cursive text */
+    font-size: 1rem;
+    padding: 8px 16px;
+    border: 1.5px solid #c68642;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 1px 2px 4px rgba(0,0,0,0.1);
+    transition: all 0.2s ease;
+  }
+
+  .light-history-btn:hover {
+    background: #fbe8c4;
+    transform: scale(1.05);
+  }
+
+  .light-history-content {
+    display: none;
+    margin-top: 12px;
+    padding: 15px;
+    background: #fff8e1;
+    border: 1.5px solid #c68642;
+    border-radius: 10px;
+    text-align: left;
+    line-height: 1.5;
+    max-height: 60vh;
+    overflow-y: auto;
+    font-family: "Times New Roman", serif;
+    font-size: 0.95rem;
+    color: #333;
+  }
+
+  .light-history-content h3 {
+    margin-top: 10px;
+    color: #8B4513;
+  }
+
+  .light-history-content p {
+    margin: 6px 0;
+  }
+</style>
+
+<div style="text-align:center; margin:20px;">
+  <button class="light-history-btn" onclick="toggleLightHistory()">📜 Timeline since indus valley till today</button>
+  <div id="lightHistoryBox" class="light-history-content">
+    <h3>Indus Valley Civilization (c. 3000–1500 BCE)</h3>
+    <p>Sites like <b>Kalibangan</b> and <b>Balathal</b> showed early farming, pottery, and fire altars.</p>
+
+    <h3>Meena Rule (c. 6th century BCE – 8th century CE)</h3>
+    <p>The <b>Meenas</b> ruled before Rajputs in Dhundhar (Jaipur region), building forts and water systems.</p>
+
+    <h3>Rajput Era (8th – 16th century CE)</h3>
+    <p>Dynasties like <b>Guhilots, Chauhans, Rathores, Kachwahas</b> built forts and resisted invasions.</p>
+
+    <h3>Mughal Period (16th – 18th century CE)</h3>
+    <p>Akbar allied with Rajputs. Forts and palaces blended Mughal-Rajput architecture.</p>
+
+    <h3>Maratha & Decline (18th century)</h3>
+    <p>Marathas invaded; Rajput states paid tribute but retained partial autonomy.</p>
+
+    <h3>British Raj (19th – mid 20th century)</h3>
+    <p>Princely states under British suzerainty; railways, schools, and administration introduced.</p>
+
+    <h3>Integration with India (1947–1956)</h3>
+    <p>Princely states merged into India; modern Rajasthan formed with Jaipur as capital.</p>
+
+    <h3>Modern Rajasthan (1956–Today)</h3>
+    <p>Tourism, forts, palaces, industries, festivals, and education hubs like Kota define Rajasthan today.</p>
+  </div>
+</div>
+
+<script>
+  function toggleLightHistory() {
+    const box = document.getElementById("lightHistoryBox");
+    box.style.display = (box.style.display === "block") ? "none" : "block";
+  }
+</script>
+
+
 
   <div class="intro">Rajasthan — royal forts, lakes, desert safaris and living traditions. Tap or swipe images to open city pages.</div>
 
