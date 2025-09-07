@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Pushkar – Holy City & Lake | Rajasthan Tourism</title>
+  <meta name="description" content="Pushkar, the sacred town in Rajasthan. Explore Pushkar Lake, Brahma Temple, Savitri Temple, Camel Fair Grounds and rich heritage.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="Pushkar – Holy City & Lake | Rajasthan Tourism">
+  <meta property="og:description" content="Plan your Pushkar trip: temples, lake, fairs, and cultural heritage.">
+  <meta property="og:image" content="https://www.dropbox.com/scl/fi/your-pushkar-image.jpg?raw=1">
+  <style>
+    body {font-family:"Lucida Handwriting",cursive;margin:0;padding:0;background:#fff;color:#222;line-height:1.3;font-size:28px;}
+    header {background:url('https://www.dropbox.com/scl/fi/your-pushkar-image.jpg?raw=1') center/cover no-repeat;height:260px;display:flex;align-items:center;justify-content:center;color:#fff;text-shadow:0 2px 6px rgba(0,0,0,0.7);}    
+    header h1 {font-size:34px;background:rgba(0,0,0,0.5);padding:10px 20px;border-radius:6px;}
+    nav {background:#cc5500;padding:10px;text-align:center;}
+    nav a {color:#fff;margin:0 10px;text-decoration:none;font-weight:bold;}
+    nav a:hover {text-decoration:underline;}
+    nav .active {text-decoration:underline;color:#ffd700;}
+    .section {padding:20px;}
+    h2 {color:#cc5500;margin-top:30px;}
+    .facts {display:flex;gap:20px;flex-wrap:wrap;background:#f9f9f9;border-left:4px solid #cc5500;padding:12px;border-radius:6px;}
+    .facts div {flex:1 1 200px;}
+    .attractions {display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;}
+    .attraction {border:1px solid #ddd;border-radius:6px;overflow:hidden;background:#fafafa;box-shadow:0 2px 4px rgba(0,0,0,0.1);cursor:pointer;transition:transform 0.2s,box-shadow 0.2s;}
+    .attraction:hover {transform:scale(1.02);box-shadow:0 4px 8px rgba(0,0,0,0.15);}
+    .attraction img {width:100%;height:160px;object-fit:cover;}
+    .attraction div {padding:10px;}
+    .details {display:none;margin-top:8px;font-size:28px;color:#444;line-height:1.4;}
+    .toggle-icon {float:right;font-size:16px;color:#cc5500;}
+    .gallery {display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px;margin-top:15px;}
+    .gallery img {width:100%;border-radius:6px;}
+    footer {text-align:center;padding:15px;margin-top:30px;font-size:14px;background:#f0f0f0;}
+    a {color:#cc5500;text-decoration:none;}
+    a:hover {text-decoration:underline;}
+    .btn-back {display:inline-block;margin-top:20px;padding:8px 14px;background:#cc5500;color:#fff;border-radius:4px;}
+    #moreInfo {max-height:0;overflow:hidden;transition:max-height 0.4s ease;}
+    #infoBtn {margin-top:10px;padding:6px 12px;background:#cc5500;color:#fff;border:none;border-radius:4px;cursor:pointer;}
+    iframe {width:100%;height:280px;border:0;margin-top:15px;border-radius:6px;}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Pushkar – Holy City & Lake</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="jaipur.html">Jaipur</a>
+    <a href="jodhpur.html">Jodhpur</a>
+    <a href="jaisalmer.html">Jaisalmer</a>
+    <a href="udaipur.html">Udaipur</a>
+    <a href="pushkar.html" class="active">Pushkar</a>
+    <a href="kota.html">Kota</a>
+    <a href="mount-abu.html">Mount Abu</a>
+    <a href="chittorgarh.html">Chittorgarh</a>
+  </nav>
+
+  <div class="section">
+    <p>
+      Pushkar, a sacred town in Rajasthan, is famous for its holy lake, temples, and the vibrant Pushkar Camel Fair. The town attracts pilgrims, tourists, and photographers alike.
+    </p>
+
+    <div id="moreInfo">
+      <p>
+        Pushkar has been a prominent pilgrimage site for centuries, known for its Brahma Temple, sacred lake, and religious fairs. The town combines spirituality with vibrant Rajasthan culture.
+      </p>
+      <ul>
+        <li><b>c. 10th–12th c.:</b> Pushkar develops as a holy town with temples and ghats.</li>
+        <li><b>17th–18th c.:</b> Construction of Brahma Temple and ghats around Pushkar Lake.</li>
+        <li><b>Modern era:</b> Pushkar Camel Fair and tourism bring international attention.</li>
+      </ul>
+    </div>
+    <button onclick="toggleInfo()" id="infoBtn">Pushkar Heritage & Attractions ⬇</button>
+  </div>
+
+  <div class="section">
+    <h2>Top Attractions</h2>
+    <div class="attractions">
+      <div class="attraction" onclick="toggleAttraction(this)">
+        <img src="https://www.dropbox.com/scl/fi/your-pushkar-lake.jpg?raw=1" alt="Pushkar Lake">
+        <div><b>Pushkar Lake</b> – Sacred lake and ghats <span class="toggle-icon">➕</span>
+          <div class="details">Pushkar Lake is considered holy; pilgrims take ritual baths at its ghats and temples surround its banks.</div>
+        </div>
+      </div>
+
+      <div class="attraction" onclick="toggleAttraction(this)">
+        <img src="https://www.dropbox.com/scl/fi/your-brahma-temple.jpg?raw=1" alt="Brahma Temple">
+        <div><b>Brahma Temple</b> – Only temple dedicated to Lord Brahma <span class="toggle-icon">➕</span>
+          <div class="details">Built centuries ago, this temple attracts pilgrims and visitors from around the world. Its architecture is distinctive with a red spire and intricate carvings.</div>
+        </div>
+      </div>
+
+      <div class="attraction" onclick="toggleAttraction(this)">
+        <img src="https://www.dropbox.com/scl/fi/your-savitri-temple.jpg?raw=1" alt="Savitri Temple">
+        <div><b>Savitri Temple</b> – Hilltop temple with panoramic views <span class="toggle-icon">➕</span>
+          <div class="details">Located on a hill, Savitri Temple provides panoramic views of Pushkar town and lake; reachable via 900+ steps.</div>
+        </div>
+      </div>
+
+      <div class="attraction" onclick="toggleAttraction(this)">
+        <img src="https://www.dropbox.com/scl/fi/your-camel-fair.jpg?raw=1" alt="Camel Fair Grounds">
+        <div><b>Camel Fair Grounds</b> – Annual Pushkar Camel Fair <span class="toggle-icon">➕</span>
+          <div class="details">The grounds host the famous Pushkar Camel Fair each year with trading, competitions, cultural shows, and vibrant festivities.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="facts">
+      <div><b>Best Time:</b> Oct–Nov</div>
+      <div><b>Nearest Airport:</b> Jaipur International Airport (145 km)</div>
+      <div><b>Railway:</b> Ajmer Junction</div>
+      <div><b>Stay:</b> 1–2 days</div>
+    </div>
+
+    <h2>Suggested Itinerary</h2>
+    <p><b>1 Day:</b> Pushkar Lake → Brahma Temple → Savitri Temple.</p>
+    <p><b>2 Days:</b> Day 1 as above, Day 2 Camel Fair Grounds, local markets, and cultural walk.</p>
+
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="https://www.dropbox.com/scl/fi/your-pushkar-lake.jpg?raw=1" alt="Pushkar Lake">
+      <img src="https://www.dropbox.com/scl/fi/your-brahma-temple.jpg?raw=1" alt="Brahma Temple">
+      <img src="https://www.dropbox.com/scl/fi/your-savitri-temple.jpg?raw=1" alt="Savitri Temple">
+    </div>
+
+    <h2>How to Reach</h2>
+    <p><b>Air:</b> Jaipur Airport (145 km).<br>
+       <b>Rail:</b> Ajmer Junction, connected to Delhi, Jaipur, Ahmedabad.<br>
+       <b>Road:</b> Well-connected via National Highways to Jaipur, Ajmer, and Udaipur.</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29097.0!2d74.556!3d26.486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjZCczI5JzAwLjAiTiA3NMKwMzMnMDAuMCJF!5e0!3m2!1sen!2sin!4v1234567890" allowfullscreen></iframe>
+  </div>
+
+  <footer>
+    © 2025 Rajasthan Tourism by Rajesh Meena |
+  </footer>
+
+  <script>
+    function toggleInfo() {
+      const moreInfo = document.getElementById("moreInfo");
+      const btn = document.getElementById("infoBtn");
+      if (moreInfo.style.maxHeight) {
+        moreInfo.style.maxHeight = null;
+        btn.textContent = "Pushkar Heritage & Attractions ⬇";
+      } else {
+        moreInfo.style.maxHeight = moreInfo.scrollHeight + "px";
+        btn.textContent = "Collapse Details ⬆";
+      }
+    }
+
+    function toggleAttraction(el){
+      const details = el.querySelector('.details');
+      const icon = el.querySelector('.toggle-icon');
+      if(details.style.display === 'block'){
+        details.style.display = 'none'; icon.textContent = '➕';
+      } else { details.style.display = 'block'; icon.textContent = '➖'; }
+    }
+  </script>
+</body>
+</html>
