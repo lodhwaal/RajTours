@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Ranthambore – Fort & Wildlife | Rajasthan Tourism</title>
+  <meta name="description" content="Ranthambore National Park and Fort — historic fort, Ganesh temple, Padam Talab and wildlife sanctuary (tigers).">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="Ranthambore – Fort & Wildlife | Rajasthan Tourism">
+  <meta property="og:description" content="Plan your Ranthambore trip: Ranthambore Fort, Trinetra Ganesh Temple, Padam Talab and the tiger sanctuary.">
+  <meta property="og:image" content="https://www.dropbox.com/scl/fi/dwszgv89kl8nx6f23mmmx/trinetra-ganesh-temple.jpg?rlkey=e643oaxwrw3cifq8cc66q96t1&raw=1">
+  <style>
+    body {font-family:"Lucida Handwriting",cursive;margin:0;padding:0;background:#fff;color:#222;line-height:1.3;font-size:28px;}
+    header {background:url('https://www.dropbox.com/scl/fi/17q8am7lsdn8ve701b4f5/ranthambore-fort.jpg?rlkey=xeb1e3sv0jnmwlb4j9893e3d4&raw=1') center/cover no-repeat;height:260px;display:flex;align-items:center;justify-content:center;color:#fff;text-shadow:0 2px 6px rgba(0,0,0,0.7);}    
+    header h1 {font-size:34px;background:rgba(0,0,0,0.5);padding:10px 20px;border-radius:6px;}
+    nav {background:#2e7d32;padding:10px;text-align:center;}
+    nav a {color:#fff;margin:0 10px;text-decoration:none;font-weight:bold;}
+    nav a:hover {text-decoration:underline;}
+    nav .active {text-decoration:underline;color:#ffd700;}
+    .section {padding:20px;}
+    h2 {color:#2e7d32;margin-top:30px;}
+    .facts {display:flex;gap:20px;flex-wrap:wrap;background:#f9f9f9;border-left:4px solid #2e7d32;padding:12px;border-radius:6px;}
+    .facts div {flex:1 1 200px;}
+    .attractions {display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;}
+    .attraction {border:1px solid #ddd;border-radius:6px;overflow:hidden;background:#fafafa;box-shadow:0 2px 4px rgba(0,0,0,0.1);cursor:pointer;transition:transform 0.2s,box-shadow 0.2s;}
+    .attraction:hover {transform:scale(1.02);box-shadow:0 4px 8px rgba(0,0,0,0.15);}
+    .attraction img {width:100%;height:160px;object-fit:cover;}
+    .attraction div {padding:10px;}
+    .details {display:none;margin-top:8px;font-size:28px;color:#444;line-height:1.4;}
+    .toggle-icon {float:right;font-size:16px;color:#2e7d32;}
+    footer {text-align:center;padding:15px;margin-top:30px;font-size:20px;background:#f0f0f0;}
+    a {color:#2e7d32;text-decoration:none;}
+    a:hover {text-decoration:underline;}
+    #moreInfo {max-height:0;overflow:hidden;transition:max-height 0.4s ease;}
+    #infoBtn {margin-top:10px;padding:6px 12px;background:#2e7d32;color:#fff;border:none;border-radius:4px;cursor:pointer;}
+    iframe {width:100%;height:280px;border:0;margin-top:15px;border-radius:6px;}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Ranthambore – Fort & Wildlife</h1>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="jaipur.html">Jaipur</a>
+    <a href="jodhpur.html">Jodhpur</a>
+    <a href="jaisalmer.html">Jaisalmer</a>
+    <a href="udaipur.html">Udaipur</a>
+    <a href="pushkar.html">Pushkar</a>
+    <a href="kota.html">Kota</a>
+    <a href="ranthambore.html" class="active">Ranthambore</a>
+    <a href="chittorgarh.html">Chittorgarh</a>
+  </nav>
+
+  <div class="section">
+    <p>
+      Ranthambore combines rich Rajput history with iconic wildlife — a must-visit for history buffs and nature lovers. Famous for the imposing Ranthambore Fort and its tiger-inhabited national park.
+    </p>
+
+    <div id="moreInfo">
+      <p>
+        Ranthambore grew around the hill fort, an important medieval stronghold. The surrounding forests were declared a reserve and later a national park — now a premier tiger-spotting destination.
+      </p>
+      <ul>
+        <li><b>Early centuries:</b> Fort served as strategic Rajput stronghold.</li>
+        <li><b>19th–20th century:</b> Area noted for game and royal hunts.</li>
+        <li><b>Modern period:</b> Protected as a reserve and became world-famous for tigers.</li>
+      </ul>
+    </div>
+    <button onclick="toggleInfo()" id="infoBtn">Uncover Ranthambore’s Story ⬇</button>
+  </div>
+
+  <div class="section">
+    <h2>Top Attractions</h2>
+    <div class="attractions">
+
+      <div class="attraction" onclick="toggleAttraction(this)">
+        <img src="https://www.dropbox.com/scl/fi/17q8am7lsdn8ve701b4f5/ranthambore-fort.jpg?rlkey=xeb1e3sv0jnmwlb4j9893e3d4&raw=1" alt="Ranthambore Fort">
+        <div><b>Ranthambore Fort</b> – Historic citadel <span class="toggle-icon">➕</span>
+          <div class="details">A hilltop fortress with panoramic views, ancient temples and strong Rajput architecture — great for photos and history walks.</div>
+        </div>
+      </div>
+
+      <div class="attraction" onclick="toggleAttraction(this)">
+        <img src="https://www.dropbox.com/scl/fi/dwszgv89kl8nx6f23mmmx/trinetra-ganesh-temple.jpg?rlkey=e643oaxwrw3cifq8cc66q96t1&raw=1" alt="Trinetra Ganesh Temple">
+        <div><b>Trinetra Ganesh Temple</b> – Hilltop shrine <span class="toggle-icon">➕</span>
+          <div class="details">Ancient Ganesh temple inside the fort complex — spiritual stop with sweeping views of the park and lakes below.</div>
+        </div>
+      </div>
+
+      <div class="attraction" onclick="toggleAttraction(this)">
+        <img src="https://www.dropbox.com/scl/fi/8u9vr4dbbjwa3un49yp6p/padam-talab.jpg?rlkey=iukorrkx18vob4httd8osylak&raw=1" alt="Padam Talab">
+        <div><b>Padam Talab</b> – Scenic lake <span class="toggle-icon">➕</span>
+          <div class="details">A charming waterbody near the fort — attracts birds and offers calm spots for photography and relaxation.</div>
+        </div>
+      </div>
+
+      <div class="attraction" onclick="toggleAttraction(this)">
+        <img src="https://www.dropbox.com/scl/fi/aotarhq1m59t6586bzfog/sanctuary.jpg?rlkey=gqflgo8sjovpm6gew8ssw5oc6&raw=1" alt="Ranthambore Sanctuary">
+        <div><b>Ranthambore Sanctuary</b> – Tiger reserve <span class="toggle-icon">➕</span>
+          <div class="details">One of India’s best-known tiger reserves — guided safaris give chances to spot tigers, leopards, deer and rich birdlife.</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="facts">
+      <div><b>Best Time:</b> Oct–Mar</div>
+      <div><b>Nearest Airport:</b> Jaipur Airport (approx 160 km)</div>
+      <div><b>Railway:</b> Sawai Madhopur Junction (20 km)</div>
+      <div><b>Stay:</b> 2–3 days</div>
+    </div>
+
+    <h2>Suggested Itinerary</h2>
+    <p><b>1 Day:</b> Ranthambore Fort → Trinetra Ganesh Temple → Padam Talab.</p>
+    <p><b>2 Days:</b> Day 1 safari (zone-based) → Day 2 fort & local exploration.</p>
+
+    <h2>How to Reach</h2>
+    <p><b>Air:</b> Jaipur Airport (~160 km).<br>
+       <b>Rail:</b> Sawai Madhopur Junction (nearest major railhead).<br>
+       <b>Road:</b> Well-connected by road from Jaipur and Kota.</p>
+
+    <iframe src="https://maps.google.com?q=Ranthambore%20Fort&output=embed" allowfullscreen></iframe>
+  </div>
+
+  <footer>
+    © 2025 Rajasthan Tourism by Rajesh Meena
+  </footer>
+
+  <script>
+    function toggleInfo() {
+      const moreInfo = document.getElementById("moreInfo");
+      const btn = document.getElementById("infoBtn");
+      if (moreInfo.style.maxHeight) {
+        moreInfo.style.maxHeight = null;
+        btn.textContent = "Uncover Ranthambore’s Story ⬇";
+      } else {
+        moreInfo.style.maxHeight = moreInfo.scrollHeight + "px";
+        btn.textContent = "Collapse Timeline ⬆";
+      }
+    }
+
+    function toggleAttraction(el){
+      const details = el.querySelector('.details');
+      const icon = el.querySelector('.toggle-icon');
+      if(details.style.display === 'block'){
+        details.style.display = 'none'; icon.textContent = '➕';
+      } else { details.style.display = 'block'; icon.textContent = '➖'; }
+    }
+  </script>
+</body>
+</html>
